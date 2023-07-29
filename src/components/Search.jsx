@@ -30,7 +30,7 @@ const Search = (props) => {
   //and an object that contains the properties you wish to send to the serve
 
   const getFilterData = async () => {
-    let url = `http://localhost:7001/api/filter`;
+    let url = `https://backend-zomato-deploy.vercel.app/api/filter`;
 
     let { data } = await axios.post(url, filterData);
 

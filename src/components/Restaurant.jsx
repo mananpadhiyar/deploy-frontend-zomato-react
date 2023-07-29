@@ -42,7 +42,7 @@ const Restaurant = (props) => {
   };
 
   let getRestaurantDetails = async () => {
-    let url = `http://localhost:7001/api/get-restaurant-list-res-id/${id}`;
+    let url = `https://backend-zomato-deploy.vercel.app/api/get-restaurant-list-res-id/${id}`;
 
     let { data } = await axios.get(url);
 
@@ -50,7 +50,7 @@ const Restaurant = (props) => {
   };
 
   let getMenuItemList = async () => {
-    let url = `http://localhost:7001/api/get-menuitem-list-by-res-id/${id}`;
+    let url = `https://backend-zomato-deploy.vercel.app/api/get-menuitem-list-by-res-id/${id}`;
 
     let { data } = await axios.get(url);
 
@@ -64,7 +64,7 @@ const Restaurant = (props) => {
   }, []);
 
   let makePayment = async () => {
-    let url = `http://localhost:7001/api/gen-order-details`;
+    let url = `https://backend-zomato-deploy.vercel.app/api/gen-order-details`;
 
     let { data } = await axios.post(url, { amount: total });
     //    console.log(data)
@@ -104,7 +104,7 @@ const Restaurant = (props) => {
           res_name: rDetails.name,
         };
 
-        let url = "http://localhost:7001/api/verify-payment";
+        let url = "https://backend-zomato-deploy.vercel.app/api/verify-payment";
 
         let { data } = await axios.post(url, sendData);
 

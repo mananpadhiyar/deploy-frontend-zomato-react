@@ -11,7 +11,7 @@ function App() {
   let [locationList, setLocationList] = useState([]);
 
   const getLocationList = async () => {
-    let url = `http://localhost:7001/api/get-location-list`;
+    let url = `https://backend-zomato-deploy.vercel.app/api/get-location-list`;
     let { data } = await axios.get(url);
 
     setLocationList(data.list);

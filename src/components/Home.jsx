@@ -12,7 +12,7 @@ const Home = (props) => {
   const [mealtypeList, setMealtypeList] = useState([]);
   let [restaurantList, setrestaurantList] = useState([]);
   let getfilterData = async () => {
-    let url = `http://localhost:7001/api/filter`;
+    let url = `https://backend-zomato-deploy.vercel.app/api/filter`;
 
     let { data } = await axios.post(url, filterData);
 
@@ -44,7 +44,7 @@ const Home = (props) => {
     navigate(`/restaurant/${value}`);
   };
   const getMealtypeList = async () => {
-    let url = "http://localhost:7001/api/get-mealtype-list";
+    let url = "https://backend-zomato-deploy.vercel.app/api/get-mealtype-list";
 
     let { data } = await axios.get(url);
 
