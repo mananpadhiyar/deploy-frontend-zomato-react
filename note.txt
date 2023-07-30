@@ -42,7 +42,6 @@ delpoyment process :
 }
 
 
-
   # what is cloud storage ?
 
 => Cloud storage is a cloud computing model that enables storing data and files on the internet

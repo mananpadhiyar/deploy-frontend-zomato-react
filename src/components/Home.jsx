@@ -62,7 +62,7 @@ const Home = (props) => {
         <section className="row main-section align-content-start justify-content-center">
           <Header logo={false} user={props.user} />
 
-          <section className="container  main-body">
+          <section className="container text-align-center main-body">
             <p className="logo">e!</p>
             <p className="main-text">
               Find the best restaurants, cafés, and bars
