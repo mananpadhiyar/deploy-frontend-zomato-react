@@ -1,10 +1,5 @@
 delpoyment process :
 
- # what is cloud storage ?
-
-=> Cloud storage is a cloud computing model that enables storing data and files on the internet
-   through a cloud computing provider that you access either through the public internet or a 
-   dedicated private network connection.
 
 1. frontend part => netlify or anyother platfrom
 
@@ -45,3 +40,17 @@ delpoyment process :
     }
   ]
 }
+
+
+
+  # what is cloud storage ?
+
+=> Cloud storage is a cloud computing model that enables storing data and files on the internet
+   through a cloud computing provider that you access either through the public internet or a 
+   dedicated private network connection.
+
+  # What is meant by web hosting?
+=> Web hosting -- also known as website hosting or webhosting -- is the process where a web 
+   hosting provider stores and maintains website files and applications on a server to make 
+   its customers' websites accessible on the internet.
+   
