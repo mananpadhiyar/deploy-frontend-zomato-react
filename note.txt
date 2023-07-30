@@ -1,0 +1,47 @@
+delpoyment process :
+
+ # what is cloud storage ?
+
+=> Cloud storage is a cloud computing model that enables storing data and files on the internet
+   through a cloud computing provider that you access either through the public internet or a 
+   dedicated private network connection.
+
+1. frontend part => netlify or anyother platfrom
+
+=> Netlify is a platform for web developers to host their sites in the cloud without managing
+   any servers in the back-end where application logic and database works. 
+
+ ## before uploading frontend part on netlify through github 
+=> do not upload node__modules. add that in git ignore file so that github will ignore
+
+
+2. mongoDB => deploy database (mongoDB atlas)
+
+=> The Easiest Way to Deploy, Operate, and Scale MongoDB in the Cloud in Just a Few
+   Clicks. Cloud-Hosted Database Managed by MongoDB.        
+=> make available database to all server(domain) 
+
+
+3. express server => deploy => make api available in the internet
+
+=> It's possible to deploy an Express.js application as a single Serverless Function in vercel
+
+## if you deploy through vercel main file name must be index.js not main.js it will not works
+   so alway make index.js 
+
+   add vercel.json file to make real json data
+   {
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
